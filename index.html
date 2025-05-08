@@ -9,12 +9,13 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-input">
           <input
             type="search"
             placeholder="Enter a city..."
             required
             class="search-input"
+            id="search-input"
           />
           <input type="submit" value="search" class="search-button" />
         </form>
@@ -22,11 +23,11 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-city">Cape `town</h1>
+            <h1 class="weather-city" id="weather-city">Cape Town</h1>
             <p class="weather-details">
               Tuesday 14:34, scattered clouds
               <br />
-              Humidity: <strong>66 </strong>, Wind: <strong>3.29km/h</strong>
+              Humidity: <strong>66%</strong>, Wind: <strong>3.29km/h</strong>
             </p>
           </div>
           <div class="weather-container">
@@ -41,5 +42,6 @@
         hosted on <a href="https://github.com/SibuleleG/weather2">Github</a>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

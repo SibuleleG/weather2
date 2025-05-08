@@ -2,12 +2,14 @@ body {
   background-color: antiquewhite;
   font-family: "poppins", sans-serif;
 
- .weather-app {
+ .weather-app{
     background: white;
     margin: 50, auto;
     padding: 30px;
+    max-width: 600px;
     box-shadow: 0 30px 50px rgba(65, 50, 100, 0);
     border-radius: 10px;
+    align-items: center;
   }
   header{
     border-bottom: 1px solid;
@@ -16,11 +18,11 @@ body {
   a{
     color: peru;
   }
-.search-iput{
+.search-input{
     background-color: antiquewhite;
     border: none;
     border-radius: 6px;
-    width: 80px;
+    width: 470px;
     padding:15px 20px;
     font-size: 16px;
 }
@@ -28,7 +30,7 @@ body {
     background: peru;
     padding: 15px 30px;
     border: none;
-    border-radius: 16px;
+    border-radius: 6px;
     margin-left: 10px;
     color: white;
     font-size: 16px;
@@ -38,42 +40,43 @@ body {
     justify-content: space-between;
 }
 main{
- padding: 30 0;   
+ padding: 30px 0;   
 }
 .weather-city{
-    font-size: 28;
-    line-height: 48;
+    font-size: 40px;
+    line-height: 37px;
     margin: 0;
 }
 .weather-details{
-    font-size: 16;
-    line-height: 25;
+    font-size: 16px;
+    line-height: 30px;
     color: rgba(39,33,66,0.4);
-font-weight: 25;
+font-weight: 35;
 }
 
 .weather-details strong{
     color: #f65282;
+    font-weight: 50px;
 }
 .weather-container{
     display: flex;
 }
 .weather-icon{
-   font-size: 44; 
-   margin-top: 22;
+   font-size: 60px; 
+   margin-top: 22px;
 }
 .weather-unit{
-    margin-top: 16px;
+    margin-top: 30px;
     font-size: 28px;
-
 }
 .weather-temp{
-    font-size: 88;
+    font-size: 88px;
     font-weight: bold;
+    margin-left: 10;
 }
 footer{
     border-bottom: 1px solid;
     padding: 30 0 0px 0;
-    font-size: 12;
+    font-size: 12px;
     color: rgba(0,0,0,0.6);
 text-align: center;}

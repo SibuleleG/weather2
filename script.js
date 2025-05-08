@@ -5,6 +5,6 @@ function handleSearchSubmit(event) {
   let cityElement = document.querySelector("#weather-city");
   cityElement.innerHTML = searchInput.value;
 }
-let searchFormElement = document.querySelector("#search-form");
 
-searchFormElement.addEventListener("submit, handleSearchSubmit");
+let searchFormElement = document.querySelector("#search-form");
+searchFormElement.addEventListener("submit", handleSearchSubmit);

@@ -7,25 +7,39 @@
     <title>weather App</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Enter a city..." required />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main><h1>Welcome to weather App</h1></main>
-    <div>
-      <h1>Paris</h1>
-      <p>
-        Tuesday 14:34, scattered clouds
-        <br />
-        Humidity: 66%, Wind: 3.29km/h
-      </p>
+    <div class="weather-app">
+      <header>
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city..."
+            required
+            class="search-input"
+          />
+          <input type="submit" value="search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-city">Cape `town</h1>
+            <p class="weather-details">
+              Tuesday 14:34, scattered clouds
+              <br />
+              Humidity: <strong>66 </strong>, Wind: <strong>3.29km/h</strong>
+            </p>
+          </div>
+          <div class="weather-container">
+            <div class="weather-icon">🌤</div>
+            <div class="weather-temp">12</div>
+            <div class="weather-unit">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        coded by <a href="https://github.com/SibuleleG">Sbulele Gxidolo</a> code
+        hosted on <a href="https://github.com/SibuleleG/weather2">Github</a>
+      </footer>
     </div>
-    <div>🌤 12 C</div>
-    <footer>
-      coded by <a href="https://github.com/SibuleleG">Sbulele Gxidolo</a> code
-      hosted on <a href="https://github.com/SibuleleG/weather2">Github</a>
-    </footer>
   </body>
 </html>

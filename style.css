@@ -1,15 +1,22 @@
 body {
-  background-color: antiquewhite;
+ 
   font-family: "poppins", sans-serif;
+  margin: 0px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(image.png) no-repeat center fixed;
+  box-sizing: cover;
 
  .weather-app{
-    background: white;
+    background-color: rgba(255, 255, 255, 0.5);
     margin: 50px, auto;
-    padding: 30px;
+    padding: 40px 80px;
     max-width: 600px;
     box-shadow: 0px 30px 50px rgba(65, 50, 100, 0);
     border-radius: 10px;
-   left: 50px;
+  
   
   }
   header{
@@ -17,22 +24,22 @@ body {
     padding: 0 0 30px 0;
   }
   a{
-    color: peru;
+    color: #8c83c7;
   }
 .search-input{
-    background-color: antiquewhite;
+    background-color: #cac3f7;
     border: none;
     border-radius: 6px;
-    width: 470px;
+    width: 350px;
     padding:15px 20px;
     font-size: 16px;
 }
 .search-button{
-    background: peru;
+    background: #8c83c7;
     padding: 15px 30px;
     border: none;
     border-radius: 6px;
-    margin-left: 10px;
+    margin-left: 5px;
     color: white;
     font-size: 16px;
 }
@@ -51,7 +58,7 @@ main{
 .weather-details{
     font-size: 16px;
     line-height: 30px;
-    color: rgba(39,33,66,0.4);
+    color:  rgba(0,0,0,0.6);
 font-weight: 35;
 }
 
@@ -63,17 +70,18 @@ font-weight: 35;
     display: flex;
 }
 .weather-icon{
-   font-size: 60px; 
-   margin-top: 22px;
+  width: 88px;
+height: 88px;
 }
 .weather-unit{
-    margin-top: 30px;
+    margin-top: 9px;
     font-size: 28px;
 }
 .weather-temp{
     font-size: 88px;
     font-weight: bold;
     margin-left: 10;
+   line-height: 1;
 }
 footer{
     border-bottom: 1px solid;

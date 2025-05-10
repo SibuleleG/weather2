@@ -60,6 +60,7 @@ function getForecast(city) {
 
 function diplayForecast(response) {
   console.log(response.data);
+
   let days = ["Tue", "Wed", "Thurs", "Fri", "Sat"];
   let forecastHtml = "";
 

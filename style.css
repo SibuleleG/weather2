@@ -12,7 +12,7 @@ body {
 .weather-app {
   background-color: rgba(255, 255, 255, 0.5);
   margin: 50px, auto;
-  padding: 40px 80px;
+  padding: 40px 50px;
   max-width: 600px;
   box-shadow: 0px 30px 50px rgba(65, 50, 100, 0);
   border-radius: 10px;
@@ -106,7 +106,7 @@ main {
   margin-top: 10px;
 }
 .weather-forecast-temperature {
-  padding: 0 10px;
+  padding: 0 3px;
 }
 
 footer {

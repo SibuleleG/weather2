@@ -59,12 +59,27 @@ function getForecast(city) {
 }
 
 function displayForecast(response) {
-  console.log(response.data);
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
-  let days = ["Tue", "Wed", "Thurs", "Fri", "Sat"];
+  console.log(days);
+  let todayIndex = new Date().getDay();
+  let resultDays = [];
+
+  for (let i = 1; i < 9; i++) {
+    let index = (todayIndex + i) % 7;
+    resultDays.push(days[index]);
+  }
+
+  console.log(resultDays);
+
   let forecastHtml = "";
+  console.log("value of response below");
+  console.log(response);
+  let weekly_data = response.data.daily;
 
-  days.forEach(function (day) {
+  OrderedDays = resultDays.slice(0, 6);
+  OrderedDays.forEach(function (day, index) {
+    console.log(day);
     forecastHtml =
       forecastHtml +
       `
@@ -73,9 +88,13 @@ function displayForecast(response) {
             <div class="weather-forecast-icon">🌧</div>
             <div class="weather-forecast-temperatures">
               <div class="weather-forecast-temperature">
-                <strong>12°</strong>
-              </div>
-              <div class="weather-forecast-temperature">9°</div>
+                <strong>${Math.round(
+                  weekly_data[index].temperature.day
+                )}°</strong>
+              </div>  
+              <div class="weather-forecast-temperature">${Math.round(
+                weekly_data[index].wind.speed
+              )}</div>
             </div>
           </div>`;
   });
